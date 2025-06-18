@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text_center">Edit Income & Expenses Details</h1>
+        <div>
+            <form class="updatedForm">
+                <label for="f_name">Full Name</label><br>
+                <input type="text" name="f_name" id="f_name" placeholder="Enter Your Full Name ..." required><br><br>
+                <label for="income">Income Amount</label><br>
+                <input type="number" name="income" id="income" placeholder="Enter Your Income Amount ..." required><br><br>
+                <label for="">Expenses Details :</label><br><br>
+                <label for="grocery">Grocery</label><br>
+                <input type="number" name="grocery" id="grocery" placeholder="Enter Your Grocery Amount ..." required><br><br>
+                <label for="emi">EMI</label><br>
+                <input type="number" name="emi" id="emi" placeholder="Enter Your EMI Amount ..." required><br><br>
+                <label for="amenity">Amenity</label><br>
+                <input type="number" name="amenity" id="amenity" placeholder="Enter Your Amenity Amount ..." required><br><br>
+                <label for="others">Others</label><br>
+                <input type="number" name="others" id="others" placeholder="Enter Your Others Amount ..." required><br><br>
+                <label for="description">Description</label><br>
+                <textarea class="textArea" rows="3" name="description" id="description" required></textarea><br>
+
+                <button class="updatebtn" type="submit">Update</button>
+                <a href="../index.html" class="cancelButton">Cancel</a>
+
+            </form>
+        </div>
+        
+    </div>
+    <script src="edit.js"></script>
+</body>
+</html>

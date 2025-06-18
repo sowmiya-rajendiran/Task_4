@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #edf2fa;
+    box-sizing: border-box;
+}
+.container{
+    padding: 20px 40px;
+   
+}
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.text_center{
+    text-align: center;
+}
+#create_btn {
+    margin-top: 25px;
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #e6838c;
+    border:1px solid #e6838c;
+    font-size: 19px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cs_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.cs_grid>div{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+}
+.cs_grid div h3{
+    margin: 12px 0;
+}
+.income{
+    color: #e6838c;
+    font-size: 18px;
+    margin: 12px 0;
+}
+.expense{
+    font-size: 17px;
+    margin: 12px 0;
+}
+.expense p{
+    text-indent: 20px;
+    margin: 10px 0;
+}
+.description{
+    font-size: 17px;
+    line-height: 23px;
+    text-indent: 20px;
+    margin-top: 10px;
+    height: 70px;
+    overflow: hidden;
+}
+.total_expense{
+    color: #e6838c;
+}
+.savings{
+    margin-top: 10px;
+    background-color: #e6838c21;
+    padding: 10px;
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+.edit_btn , .delete_btn{
+    margin-right: 20px;
+    margin-top: 25px;
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #e6838c;
+    border: 1px solid #e6838c;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.filter{
+    text-align: center;
+    margin-top: 40px;
+}
+.label{
+    margin-right: 10px;
+}
+.delete_btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ------ delete page ------ */
+.delete_page{
+    padding: 30px;
+    text-align: center;
+}
+.delete_page .delete_btn{
+    margin-right: 0;
+}
+
+/*------ Create page ------- */
+.inputGet , .updatedForm{
+    width: 30%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+}
+input[type="text"] , input[type="number"] {
+    height: 30px;
+    width: 98%;
+    margin-top: 15px;
+}
+.textArea{
+    width: 98%;
+    margin-top: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+#submit , .cancelButton , .resetBtn ,.updatebtn{
+    margin-top: 25px;
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #e6838c;
+    border: 1px solid #e6838c;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cancelButton{
+    font-size: 17px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1024px) {
+    .cs_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .inputGet, .updatedForm{
+        width: 50%;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .inputGet, .updatedForm{
+        width: 70%;
+    }
+
+}
+@media only screen and (max-width: 427px) {
+    .cs_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        padding: 20px;
+    }
+    .inputGet, .updatedForm{
+        width: 80%; 
+    }
+    .cancelButton{
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+}
